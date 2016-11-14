@@ -7,7 +7,20 @@
 # server 'example.com', user: 'deploy', roles: %w{app web}, other_property: :other_value
 # server 'db.example.com', user: 'deploy', roles: %w{db}
 
-
+role :app, %w{deploy@35.160.106.72}
+server '35.160.106.72', user: 'deploy', roles: %w{web app db}
+#server "35.160.106.72", :app, :web, :db, :primary => true
+#set :stage, :staging
+set :stage, :production
+set :branch, 'master'
+set :deploy_to, '/home/deploy/contactbook'
+fetch(:default_env).merge!(rails_env: :production)
+set :ssh_options, {
+keys: %w(/home/deploy/.ssh/id_rsa),
+forward_agent: false,
+user: 'deploy'
+#auth_methods: %w(password)
+}
 
 # role-based syntax
 # ==================
