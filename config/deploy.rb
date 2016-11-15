@@ -48,7 +48,7 @@ set :keep_releases, 2
 set :scm, :git
 set :scm_username, 'sureshchipurupalli'
 set :deploy_to, '/home/deploy/contactbook'
-set :pty, true
+set :pty, false
 #default_run_options[:pty] = true
 set :use_sudo, true
 set :log_level, :debug

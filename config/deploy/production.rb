@@ -7,8 +7,8 @@
 # server 'example.com', user: 'deploy', roles: %w{app web}, other_property: :other_value
 # server 'db.example.com', user: 'deploy', roles: %w{db}
 
-role :app, %w{deploy@35.160.106.72}
-server '35.160.106.72', user: 'deploy', roles: %w{web app db}
+role :app, %w{deploy@35.163.226.102}
+server '35.163.226.102', user: 'deploy', roles: %w{web app db}
 #server "35.160.106.72", :app, :web, :db, :primary => true
 #set :stage, :staging
 set :stage, :production
