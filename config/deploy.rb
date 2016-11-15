@@ -47,6 +47,7 @@ set :branch, :master
 set :keep_releases, 2
 set :scm, :git
 set :scm_username, 'sureshchipurupalli'
+#set :scm_password, 'suresh@1993'
 set :deploy_to, '/home/deploy/contactbook'
 set :pty, false
 #default_run_options[:pty] = true
