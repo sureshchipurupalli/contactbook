@@ -36,7 +36,7 @@
 #require "rvm/capistrano"
 # Default value for keep_releases is 5
 # set :keep_releases, 5
-require 'capistrano/ext/multistage'
+#require 'capistrano/ext/multistage'
 lock '3.6.1'
 #require 'rvm/capistrano'
 #require 'bundler/capistrano'
