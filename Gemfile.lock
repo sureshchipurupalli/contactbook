@@ -61,8 +61,6 @@ GEM
     capistrano-bundler (1.2.0)
       capistrano (~> 3.1)
       sshkit (~> 1.2)
-    capistrano-ext (1.2.1)
-      capistrano (>= 1.0.0)
     capistrano-harrow (0.5.3)
     capistrano-rvm (0.1.2)
       capistrano (~> 3.0)
@@ -192,7 +190,6 @@ DEPENDENCIES
   byebug
   capistrano
   capistrano-bundler
-  capistrano-ext (~> 1.2, >= 1.2.1)
   capistrano-rails!
   capistrano-rvm
   capistrano3-puma
