@@ -17,6 +17,7 @@ gem 'coffee-rails', '~> 4.1.0'
 gem 'sprockets', '~> 2.8'
 gem 'figaro'
 gem 'puma'
+gem 'capistrano-ext', '~> 1.2', '>= 1.2.1'
 group :development do
   gem 'capistrano'
   gem 'capistrano3-puma'
